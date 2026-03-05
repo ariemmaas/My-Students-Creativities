@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Students' Creativities</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #333;
+}
+
+/* SECTION */
+section {
+    padding: 80px 8%;
+}
+
+/* TITLE */
+.section-title {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+/* TOP PROFILE */
+.profile-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.profile-container:hover {
+    transform: translateY(-8px);
+}
+
+.profile-img {
+    width: 260px;
+    border-radius: 20px;
+}
+
+.profile-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.profile-text p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* STUDENTS GRID */
+.student-grid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.student-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+.student-img {
+    width: 120px;
+    border-radius: 15px;
+}
+
+.student-info h3 {
+    margin-bottom: 10px;
+}
+
+.student-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.student-info a {
+    text-decoration: none;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.student-info a:hover {
+    opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .student-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section>
+    <h1 class="section-title">My Students' Creativities</h1>
+
+    <div class="profile-container">
+        <img src="your-photo.jpg" class="profile-img">
+
+        <div class="profile-text">
+            <h2>Your Name</h2>
+            <p>
+                I am a passionate coding teacher who helps kids and teens 
+                transform their ideas into interactive games and creative digital projects.
+                Watching my students build their own Scratch games is my greatest joy.
+            </p>
+        </div>
+    </div>
+
+    <div class="student-grid">
+
+        <div class="student-card">
+            <img src="student1.jpg" class="student-img">
+            <div class="student-info">
+                <h3>Student One</h3>
+                <p>Built an adventure game with levels, sound effects, and scoring system.</p>
+                <a href="student1.html">My Creativities</a>
+            </div>
+        </div>
+
+        <div class="student-card">
+            <img src="student2.jpg" class="student-img">
+            <div class="student-info">
+                <h3>Student Two</h3>
+                <p>Created a quiz game using variables, logic, and animations.</p>
+                <a href="student2.html">My Creativities</a>
+            </div>
+        </div>
+
+        <div class="student-card">
+            <img src="student3.jpg" class="student-img">
+            <div class="student-info">
+                <h3>Student Three</h3>
+                <p>Designed a platform game with multiple stages and challenges.</p>
+                <a href="student3.html">My Creativities</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
