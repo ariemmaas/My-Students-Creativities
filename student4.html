@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Scratch Games</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.game-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section>
+    <h1 class="section-title">My Scratch Games</h1>
+
+    <div class="game-grid">
+
+        <div class="game-card">
+            <iframe src="https://scratch.mit.edu/projects/1258096269/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+        <div class="game-card">
+            <iframe src="https://scratch.mit.edu/projects/1227618238/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+        <div class="game-card">
+            <iframe src="https://scratch.mit.edu/projects/1287845250/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</section>
+
+</body>
+
+</html>
+
+
